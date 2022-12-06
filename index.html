@@ -12,6 +12,25 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <form>
+        <label for="user-km">Quanti km vuoi percorrere?</label>
+        <div>
+            <input type="text" id="user-km">
+        </div>
+
+        <label for="user-age">Scegli un'opzione</label>
+        <div>
+            <select name="user-age" id="user-age">
+                <option value="adult">Maggiorenne</option>
+                <option value="young">Minorenne</option>
+                <option value="old">Più di 65</option>
+            </select>
+        </div>
+        <button type="button">Invia</button>
+    </form>
+
+    <hr>
+
+    <p>Il tuo biglietto costa: <span></span></p>
 </body>
 </html>
