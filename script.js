@@ -19,7 +19,7 @@ button.addEventListener('click', function(){
     const discountYoungMessage = document.querySelector(".discount-young");
     const discountOldMessage = document.querySelector(".discount-old");
     const hrElement = document.querySelector("hr");
-    const ticketImg = document.querySelector(".ticket-img");
+    const ticketContainer = document.querySelector(".ticket-container");
     let price = userKm.value * 0.21; 
     
     // Validation input value
@@ -55,7 +55,7 @@ button.addEventListener('click', function(){
     }
 
     buyTicket.addEventListener('click', function(){
-        ticketImg.classList.add('d-block');
+        ticketContainer.classList.add('d-block');
     });
 
 });
