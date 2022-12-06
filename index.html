@@ -16,27 +16,31 @@
 <body>
     <h1 class="text-center mt-100">Acquista il tuo biglietto</h1>
     <form class="wrap pt-5">
-        <div class="row align-items-end">
-            <div class="col-8 d-flex flex-column">
-                <label for="user-km">Quanti chilometri vuoi percorrere?</label>
-                <input type="text" id="user-km" placeholder="Inserisci un valore numerico">
-            </div>
-    
-            <div class="col-2 d-flex flex-column">
-                <label for="user-age">Scegli un'opzione</label>
-                <select name="user-age" id="user-age">
-                    <option value="adult">Maggiorenne</option>
-                    <option value="young">Minorenne</option>
-                    <option value="old">Più di 65</option>
-                 </select>
+        <div class="row justify-content-between align-items-end">
+            <div class="row col-7">
+                <div class="col-8 d-flex flex-column">
+                    <label for="user-km">Quanti chilometri vuoi percorrere?</label>
+                    <input type="text" id="user-km" class="ps-2" placeholder="Inserisci un valore numerico">
+                </div>
+        
+                <div class="col-4 d-flex flex-column">
+                    <label for="user-age">Scegli un'opzione</label>
+                    <select name="user-age" id="user-age">
+                        <option value="adult">Maggiorenne</option>
+                        <option value="young">Minorenne</option>
+                        <option value="old">Più di 65</option>
+                     </select>
+                </div>
             </div>
 
             <button type="button" id="button" class="col-2">Calcola Prezzo</button>
         </div>
     </form>
 
-    <hr>
+    <hr class="wrap mt-5">
 
-    <p>Il tuo biglietto costa: <span class="printed-price"></span></p>
+    <div class="wrap mt-3">
+        <p class="printed-price"></p>
+    </div>
 </body>
 </html>

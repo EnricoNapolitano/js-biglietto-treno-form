@@ -4,13 +4,31 @@
 }
 .wrap {
     margin: 0 auto;
-    width: 1000px;
+    width: 900px;
 }
 
 /* Generics */
 label {
     padding-bottom: 6px;
+    padding-left: 5px;
 }
 input, select, button {
     height: 50px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+/* Ticket Price */
+p.printed-price {
+    font-size: 1.8rem;
+}
+.price-style {
+    font-size: 3rem;
+    padding-left: 10px;
+    color: lightseagreen;
+}
+
+/* focus */
+:focus-visible {
+    outline: none;
 }

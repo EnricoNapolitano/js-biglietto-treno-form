@@ -30,7 +30,7 @@ button.addEventListener('click', function(){
         }
         
         // 5.
-        printedPrice.innerText = price.toFixed(2) + "€";
+        printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
     }
 });
 
