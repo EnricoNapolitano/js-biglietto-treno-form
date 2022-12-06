@@ -10,7 +10,7 @@
 // getting button element from DOM
 const button = document.getElementById("button");
 
-// getting variables from user - click function
+// getting variables from user
 button.addEventListener('click', function(){
     const userKm = document.getElementById("user-km");
     const userAge = document.getElementById("user-age");
@@ -50,12 +50,12 @@ button.addEventListener('click', function(){
         //Showing hr
         hrElement.classList.add("d-block");
 
-
         //Button buy ticket
         buyTicket.classList.add("d-block");
     }
 
     buyTicket.addEventListener('click', function(){
+        //creating and getting each element needed to generate a random ticket
         ticketContainer.classList.add('d-block');
         const wagonElement = document.getElementById("wagon");
         const codeElement = document.getElementById("code");
@@ -63,13 +63,14 @@ button.addEventListener('click', function(){
         const maxCode = 999999;
         const minCode = 900000;
         const maxWagon = 10;
+
+        //formulas to get random numbers
         let randomWagon = Math.floor(random * maxWagon) + 1;
         let randomCode = Math.floor(random * (maxCode + 1 - minCode)) + minCode;
 
-        //printing random wagon
+        //printing random wagon & random ticket code
         wagonElement.innerText = randomWagon;
         codeElement.innerText = randomCode;
     });
-
 });
 
