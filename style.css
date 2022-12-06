@@ -1,0 +1,16 @@
+/* Utilities */
+.mt-100 {
+    margin-top: 100px;
+}
+.wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* Generics */
+label {
+    padding-bottom: 6px;
+}
+input, select, button {
+    height: 50px;
+}
