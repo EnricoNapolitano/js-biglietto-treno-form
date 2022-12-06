@@ -20,6 +20,7 @@ button.addEventListener('click', function(){
     const discountOldMessage = document.querySelector(".discount-old");
     const hrElement = document.querySelector("hr");
     const ticketContainer = document.querySelector(".ticket-container");
+    ticketContainer.classList.remove("d-block");
     let price = userKm.value * 0.21; 
     
     // Validation input value
