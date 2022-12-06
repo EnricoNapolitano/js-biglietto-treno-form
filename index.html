@@ -20,7 +20,7 @@
             <div class="row col-7">
                 <div class="col-8 d-flex flex-column">
                     <label for="user-km">Quanti chilometri vuoi percorrere?</label>
-                    <input type="text" id="user-km" class="ps-2" placeholder="Inserisci un valore numerico">
+                    <input type="text" id="user-km" class="ps-2" maxlength="4" placeholder="Inserisci un valore numerico">
                 </div>
         
                 <div class="col-4 d-flex flex-column">
@@ -41,8 +41,12 @@
 
     <div class="wrap mt-3">
         <div class="row justify-content-between">
-            <p class="printed-price col-6"></p>
+            <p class="printed-price col-7"></p>
             <button id="buy-ticket" class="col-2">Effettua l'acquisto</button>
+        </div>
+        <div>
+            <p class="discount-young message">Hai ricevuto uno sconto del 20%</p>
+            <p class="discount-old message">Hai ricevuto uno sconto del 40%</p>
         </div>
     </div>
 </body>

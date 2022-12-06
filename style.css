@@ -9,6 +9,11 @@
 .d-block {
     display: block;
 }
+.message {
+    font-size: 1.5rem;
+    color: lightseagreen;
+    display: none;
+}
 
 /* Generics */
 label {
