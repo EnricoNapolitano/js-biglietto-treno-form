@@ -15,17 +15,22 @@ button.addEventListener('click', function(){
     const userKm = document.getElementById("user-km");
     const userAge = document.getElementById("user-age");
     const printedPrice = document.querySelector(".printed-price");
+    let price = userKm.value * 0.21; 
     
-    // 3. TO DO
-    
-    //4.
-    let price = userKm.value * 0.21;
-    if (userAge.value === "young") {
-        price *= 0.8;
-    } else if (userAge.value === "old") {
-        price *= 0.6;
+    // 3.
+    if (!price) {
+        alert("Attenzione, devi inserire un valore numerico!");
+    } else {
+        
+        // 4.
+        if (userAge.value === "young") {
+            price *= 0.8;
+        } else if (userAge.value === "old") {
+            price *= 0.6;
+        }
+        
+        // 5.
+        printedPrice.innerText = price.toFixed(2) + "€";
     }
-
-    printedPrice.innerText = price.toFixed(2) + "€";
 });
 
