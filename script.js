@@ -16,15 +16,14 @@ button.addEventListener('click', function(){
     const userAge = document.getElementById("user-age");
     const buyTicket = document.getElementById("buy-ticket");
     const printedPrice = document.querySelector(".printed-price");
+    const discountYoungMessage = document.querySelector(".discount-young");
+    const discountOldMessage = document.querySelector(".discount-old");
     let price = userKm.value * 0.21; 
     
     // Validation input value
-    if (!price) {
-        alert("Attenzione, devi inserire un valore numerico!");
+    if (!price || userKm.value < 1 || userKm.value > 1200) {
+        alert("Attenzione, devi inserire un valore numerico compreso fra 1 e 1200!");
     } else {
-        const discountYoungMessage = document.querySelector(".discount-young");
-        const discountOldMessage = document.querySelector(".discount-old");
-        
         //Price & Discount & Message
         if (userAge.value === "young") {
             price *= 0.8;
