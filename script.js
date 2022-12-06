@@ -13,5 +13,6 @@ const button = document.getElementById("button");
 
 button.addEventListener('click', function(){
     const userKm = document.getElementById("user-km");
-    console.log(userKm.value);
+    const userAge = document.getElementById("user-age");
+    console.log(userKm.value, userAge.value);
 });
