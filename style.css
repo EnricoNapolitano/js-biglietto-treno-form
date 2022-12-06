@@ -2,6 +2,13 @@
 .mt-100 {
     margin-top: 100px;
 }
+.container {
+    width: 1000px;
+    height: 80vh;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 25px;
+}
 .wrap {
     margin: 0 auto;
     width: 900px;
@@ -16,6 +23,14 @@
 }
 
 /* Generics */
+body {
+    background-image: url('bologna.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+hr {
+    display: none;
+}
 label {
     padding-bottom: 6px;
     padding-left: 5px;

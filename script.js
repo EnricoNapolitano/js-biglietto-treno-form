@@ -18,6 +18,7 @@ button.addEventListener('click', function(){
     const printedPrice = document.querySelector(".printed-price");
     const discountYoungMessage = document.querySelector(".discount-young");
     const discountOldMessage = document.querySelector(".discount-old");
+    const hrElement = document.querySelector("hr");
     let price = userKm.value * 0.21; 
     
     // Validation input value
@@ -37,6 +38,9 @@ button.addEventListener('click', function(){
         
         //Reset input value
         userKm.value = "";
+
+        //Showing hr
+        hrElement.classList.add("d-block");
 
         //Printing on page main message
         printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
