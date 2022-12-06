@@ -108,7 +108,7 @@ p.printed-price {
 }
 
 /* hover */
-header a:hover {
+header li a:hover {
     color: rgba(255,255,255,0.9);
     border-bottom: 3px solid white;
 }
