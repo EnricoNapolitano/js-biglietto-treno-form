@@ -14,6 +14,7 @@ const button = document.getElementById("button");
 button.addEventListener('click', function(){
     const userKm = document.getElementById("user-km");
     const userAge = document.getElementById("user-age");
+    const buyTicket = document.getElementById("buy-ticket");
     const printedPrice = document.querySelector(".printed-price");
     let price = userKm.value * 0.21; 
     
@@ -31,6 +32,7 @@ button.addEventListener('click', function(){
         
         // 5.
         printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
+        buyTicket.classList.add("d-block");
     }
 });
 

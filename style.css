@@ -6,6 +6,9 @@
     margin: 0 auto;
     width: 900px;
 }
+.d-block {
+    display: block;
+}
 
 /* Generics */
 label {
@@ -26,6 +29,10 @@ p.printed-price {
     font-size: 3rem;
     padding-left: 10px;
     color: lightseagreen;
+}
+#buy-ticket {
+    margin-top: 15px;
+    display: none;
 }
 
 /* focus */
