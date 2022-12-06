@@ -61,6 +61,7 @@ header a {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.3rem;
+    padding-bottom: 25px;
 }
 
 /* Ticket Price */
@@ -109,4 +110,9 @@ p.printed-price {
 /* hover */
 header a:hover {
     color: rgba(255,255,255,0.9);
+    border-bottom: 3px solid white;
+}
+
+button:hover {
+    opacity: 0.6;
 }
