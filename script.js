@@ -36,11 +36,12 @@ button.addEventListener('click', function(){
             discountOldMessage.classList.add("d-block");
             discountYoungMessage.classList.remove("d-block");
         } else {
-            //Printing on page main message
-            printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
             discountOldMessage.classList.remove("d-block");
             discountYoungMessage.classList.remove("d-block");
         }
+        
+        //Printing on page main message
+        printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
         
         //Reset input value
         userKm.value = "";
