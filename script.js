@@ -56,6 +56,18 @@ button.addEventListener('click', function(){
 
     buyTicket.addEventListener('click', function(){
         ticketContainer.classList.add('d-block');
+        const wagonElement = document.getElementById("wagon");
+        const codeElement = document.getElementById("code");
+        const random = Math.random();
+        const maxCode = 999999;
+        const minCode = 900000;
+        const maxWagon = 10;
+        let randomWagon = Math.floor(random * maxWagon) + 1;
+        let randomCode = Math.floor(random * (maxCode + 1 - minCode)) + minCode;
+
+        //printing random wagon
+        wagonElement.innerText = randomWagon;
+        codeElement.innerText = randomCode;
     });
 
 });
