@@ -6,3 +6,7 @@
 4. program logic
 5. print the result
 */
+
+// 1.
+const printedPrice = document.querySelector(".printed-price");
+console.log(printedPrice);
