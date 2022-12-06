@@ -8,11 +8,24 @@
 */
 
 // 1.
-const printedPrice = document.querySelector(".printed-price");
 const button = document.getElementById("button");
 
+// 2.
 button.addEventListener('click', function(){
     const userKm = document.getElementById("user-km");
     const userAge = document.getElementById("user-age");
-    console.log(userKm.value, userAge.value);
+    const printedPrice = document.querySelector(".printed-price");
+    
+    // 3. TO DO
+    
+    //4.
+    let price = userKm.value * 0.21;
+    if (userAge.value === "young") {
+        price *= 0.8;
+    } else if (userAge.value === "old") {
+        price *= 0.6;
+    }
+
+    printedPrice.innerText = price.toFixed(2) + "€";
 });
+
