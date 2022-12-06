@@ -19,6 +19,7 @@ button.addEventListener('click', function(){
     const discountYoungMessage = document.querySelector(".discount-young");
     const discountOldMessage = document.querySelector(".discount-old");
     const hrElement = document.querySelector("hr");
+    const ticketImg = document.querySelector(".ticket-img");
     let price = userKm.value * 0.21; 
     
     // Validation input value
@@ -34,6 +35,11 @@ button.addEventListener('click', function(){
             price *= 0.6;
             discountOldMessage.classList.add("d-block");
             discountYoungMessage.classList.remove("d-block");
+        } else {
+            //Printing on page main message
+            printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
+            discountOldMessage.classList.remove("d-block");
+            discountYoungMessage.classList.remove("d-block");
         }
         
         //Reset input value
@@ -42,12 +48,14 @@ button.addEventListener('click', function(){
         //Showing hr
         hrElement.classList.add("d-block");
 
-        //Printing on page main message
-        printedPrice.innerHTML = `Il tuo biglietto costa <span class="price-style">${price.toFixed(2)} €</span>`
 
         //Button buy ticket
         buyTicket.classList.add("d-block");
     }
+
+    buyTicket.addEventListener('click', function(){
+        ticketImg.classList.add('d-block');
+    });
 
 });
 

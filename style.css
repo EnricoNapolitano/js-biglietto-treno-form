@@ -77,6 +77,12 @@ p.printed-price {
     display: none;
 }
 
+/* ticket */
+.ticket-img {
+    display: none;
+    padding-top: 25px;
+}
+
 /* focus */
 :focus-visible {
     outline: none;
