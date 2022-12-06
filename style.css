@@ -84,13 +84,7 @@ p.printed-price {
 }
 .ticket-container {
     display: none;
-    position: relative;
-}
-.info-ticket {
-    position: relative;
-    display: inline-block;
-    bottom: 249px;
-    left: 382px;
+    /* position: relative; */
 }
 .info-ticket-text {
     position: relative;
