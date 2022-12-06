@@ -9,4 +9,9 @@
 
 // 1.
 const printedPrice = document.querySelector(".printed-price");
-console.log(printedPrice);
+const button = document.getElementById("button");
+
+button.addEventListener('click', function(){
+    const userKm = document.getElementById("user-km");
+    console.log(userKm.value);
+});
